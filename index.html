@@ -5,18 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>LOW-RES[HI-DEF] | GLENJAMN</title>
-		  <link rel="icon" type="image/x-icon" href="images/glenfavico.ico">
+		<link rel="icon" type="image/x-icon" href="images/glenfavico.ico">
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 <div class="container">
-  <header style="display: flex; align-items: center; justify-content: space-between; background: #000; color: #fff; padding: 10px;">
-    <!-- Logo on the Top Left -->
-    <div class="logo" style="flex: 0 0 auto;">
-      <img src="images/hvw8space.png" alt="HVW8 Space Logo" style="max-width: 150px; width: 100%; height: auto;">
-    </div>
-    
-    <!-- Right-Side Content: RSVP, Menu Toggle, and Navigation -->
+			<header style="display: flex; align-items: center; justify-content: space-between; background: #000; color: #fff; padding: 10px;">
+				<div class="logo" style="flex: 0 0 auto;">
+					<img src="images/hvw8space.png" alt="HVW8 Space Logo" style="max-width: 150px; width: 100%; height: auto;">
+				</div>
 				<div class="nav" id="nav">
 					<div><a href="mailto:rsvp@hvw8.com">Home</a></div>
 					<div><a href="mailto:rsvp@hvw8.com">Mail</a></div>
@@ -30,11 +27,12 @@
 					<div><a href="mailto:rsvp@hvw8.com">Sign Out</a></div>
 				</div>
 			</header>
+			
 			<div class="main">
 				<div class="left">
 					<div class="profile">
 						<div class="profilePicture">
-							<h2 class="userName"></h2>
+							<h2 class="userName">GLENJAMN</h2>
 							<img src="images/GLENPROFILE.jpg" alt="" style="display: block; width: 100px;">
 						</div>
 						<div class="profileInfo">
@@ -46,6 +44,30 @@
 							<p style="margin-bottom: 30px;">Last Login: <span id="lastLog"></span></p>
 						</div>
 					</div>
+					
+					<!-- Original Music Player -->
+					<div class="musicPlayer">
+						<audio id="audio" preload="auto">
+							<source src="Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3" type="audio/mp3">
+							Your browser does not support the audio element.
+						</audio>
+						<button id="playSong" type="button" onclick="togglePlay()">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M3 22v-20l18 10-18 10z"/>
+							</svg>
+						</button>
+						<button id="pauseSong" type="button" onclick="togglePlay()">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/>
+							</svg>
+						</button>
+						<div class="songName">
+							<span class="title">Alive 2007 - Robot Rock/Oh Yeah</span>
+							<span class="artist">Daft Punk</span>
+							<div id="playing"></div>
+						</div>
+					</div>
+				
 					<div class="contact">
 						<h3>Contacting <span class="userName"></span></h3>
 						<div class="contactNav">
@@ -123,30 +145,7 @@
 						<h4>MySpace URL:</h4>
 						<a href="">http://www.instagram.com/glenjamn</a>
 					</div>
-<div class="music-player glitch-player">
-    <audio id="glitch-audio" preload="auto">
-        <!-- Replace with your actual audio file path -->
-        <source src="your-audio-file.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <div class="player-controls">
-        <button id="glitch-play-btn" class="glitch-btn">
-            <svg class="play-icon" viewBox="0 0 24 24">
-                <path d="M3 22v-20l18 10-18 10z"/>
-            </svg>
-            <svg class="pause-icon" viewBox="0 0 24 24" style="display:none;">
-                <path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/>
-            </svg>
-        </button>
-        
-        <div class="track-info glitch-text">
-            <span class="title">Alive 2007 - Robot Rock/Oh Yeah</span>
-            <span class="artist">Daft Punk</span>
-            <div class="now-playing"></div>
-        </div>
-    </div>
-</div>
+
 <div class="panel">
                 <span class="panel-title">GLENJAMN's Interests</span>
                 <div class="panel-body">
@@ -338,41 +337,39 @@
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
 			// music player
-document.addEventListener('DOMContentLoaded', function() {
-    const audio = document.getElementById('glitch-audio');
-    const playBtn = document.getElementById('glitch-play-btn');
-    const playIcon = playBtn.querySelector('.play-icon');
-    const pauseIcon = playBtn.querySelector('.pause-icon');
-    const nowPlaying = document.querySelector('.now-playing');
-
-    // Play/Pause functionality
-    playBtn.addEventListener('click', function() {
-        if(audio.paused) {
-            audio.play();
-            playIcon.style.display = 'none';
-            pauseIcon.style.display = 'block';
-            nowPlaying.style.opacity = '1';
-            nowPlaying.textContent = '▶ NOW PLAYING';
-        } else {
-            audio.pause();
-            playIcon.style.display = 'block';
-            pauseIcon.style.display = 'none';
-            nowPlaying.style.opacity = '0';
-        }
-    });
-
-    // Visual feedback when audio ends
-    audio.addEventListener('ended', function() {
-        playIcon.style.display = 'block';
-        pauseIcon.style.display = 'none';
-        nowPlaying.style.opacity = '0';
-    });
-
-    // Glitch effect on hover
-    playBtn.addEventListener('mouseover', function() {
-        this.classList.add('glitch-active');
-        setTimeout(() => this.classList.remove('glitch-active'), 500);
-    });
+			const audio = document.getElementById('audio');
+			const playBtn = document.getElementById('playSong');
+			const pauseBtn = document.getElementById('pauseSong');
+			const playingIndicator = document.getElementById('playing');
+			
+			function togglePlay() {
+				if(audio.paused) {
+					audio.play();
+					playBtn.style.opacity = '0';
+					playBtn.style.display = 'none';
+					pauseBtn.style.opacity = '1';
+					pauseBtn.style.display = 'block';
+					playingIndicator.style.opacity = '1';
+					playingIndicator.style.display = 'block';
+				} else {
+					audio.pause();
+					playBtn.style.opacity = '1';
+					playBtn.style.display = 'block';
+					pauseBtn.style.opacity = '0';
+					pauseBtn.style.display = 'none';
+					playingIndicator.style.opacity = '0';
+					playingIndicator.style.display = 'none';
+				}
+			}
+			
+			audio.addEventListener('ended', function() {
+				playBtn.style.opacity = '1';
+				playBtn.style.display = 'block';
+				pauseBtn.style.opacity = '0';
+				pauseBtn.style.display = 'none';
+				playingIndicator.style.opacity = '0';
+				playingIndicator.style.display = 'none';
+			});
 		</script>
 	</body>
 </html>
