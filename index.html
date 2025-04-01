@@ -8,16 +8,23 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<div class="RSVP">
-					<input type="text">
-					<select>
-						<option>Web</option>
-						<option>MySpace</option>
-					</select>
-					<button>Search</button>
-				</div>
+<div class="container">
+  <header style="display: flex; align-items: center; justify-content: space-between; background: #000; color: #fff; padding: 10px;">
+    <!-- Logo on the Top Left -->
+    <div class="logo" style="flex: 0 0 auto;">
+      <img src="images/hvw8space.png" alt="HVW8 Space Logo" style="max-width: 150px; width: 100%; height: auto;">
+    </div>
+    
+    <!-- Right-Side Content: RSVP, Menu Toggle, and Navigation -->
+    <div style="flex: 1 1 auto; text-align: right;">
+      <div class="RSVP" style="display: inline-block; vertical-align: middle;">
+        <input type="text" style="padding: 5px;">
+        <select style="padding: 5px;">
+          <option>Web</option>
+          <option>MySpace</option>
+        </select>
+        <button style="padding: 5px;">Search</button>
+      </div>
 				<button id="menuToggle" onClick="toggleNav();">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
 				</button>
