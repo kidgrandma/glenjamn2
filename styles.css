@@ -425,6 +425,94 @@ font-size: 12px;
 	margin:0 0 20px 0;
 }
 
+
+ .glitch {
+    position: relative;
+  }
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+  }
+  .glitch span:nth-child(1) {
+    color: #ff00ff;
+    animation: glitch-effect 3s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  .glitch span:nth-child(2) {
+    color: #00ffff;
+    animation: glitch-effect 2s infinite reverse;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  }
+  
+  /* Animations */
+  @keyframes glitch-effect {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(-3px, -3px); }
+    60% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    100% { transform: translate(0); }
+  }
+  
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  .date-pulse {
+    animation: pulse 1.5s infinite, color-change 4s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes color-change {
+    0% { color: #ff66cc; }
+    25% { color: #00ffff; }
+    50% { color: #ffcc00; }
+    75% { color: #ff00ff; }
+    100% { color: #ff66cc; }
+  }
+  
+  .music-box {
+    animation: border-glow 2s infinite alternate;
+  }
+  
+  @keyframes border-glow {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+  
+  .rsvp-btn:hover {
+    animation: shake 0.5s;
+  }
+  
+  .rsvp-btn:hover .btn-glitch {
+    animation: btn-glitch 0.3s steps(2) infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 5px); }
+    50% { transform: translate(5px, -5px); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+  }
+  
+  @keyframes btn-glitch {
+    0% { opacity: 0; left: -10%; }
+    50% { opacity: 0.5; left: 0; }
+    100% { opacity: 0; left: 10%; }
+  }
 .top8 {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
