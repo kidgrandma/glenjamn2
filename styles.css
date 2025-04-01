@@ -208,7 +208,12 @@ header button#menuToggle svg {
 .userUrl h4 {
 	margin: 0;
 }
-
+.network {
+  background: #000 url('images/SOMEART.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  border: 1px solid #555;
+}
 .musicPlayer {
 	position: relative;
 	border: 1px solid #333;
