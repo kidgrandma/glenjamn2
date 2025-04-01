@@ -1,17 +1,20 @@
 body {
-	width: 100%;
-	margin: auto;
-	padding: 0;
-	background: #ededed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 14px;
-}
-body {
-  background-image: url('images/SOMEART.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+	color: #fff;
+  background-color: #000; /* Fallback background in case image fails */
+  background: #000 url('images/SOMEART.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+/* Mobile friendly: Remove fixed background on small devices */
+@media screen and (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 a {
@@ -529,32 +532,4 @@ header button#menuToggle svg {
 		padding: 0;
 	}
 }
-header {
-  background: #000 !important;       /* Fully opaque black */
-  color: #fff !important;            /* White text */
-  border: 1px solid #555 !important; /* Thin gray border */
-}
 
-.container,
-.main,
-.left,
-.right,
-.profile,
-.contact,
-.userDetails,
-.userUrl,
-.musicPlayer {
-  background: rgba(0, 0, 0, 0.7) !important;  /* 70% black */
-  color: #fff !important;                     /* White text */
-  border: 1px solid #555 !important;          /* Thin gray border */
-}
-
-/* 3) “Blog-era” link colors that pop on black (tweak as you like) */
-a {
-  color: #66ccff !important;        /* Bright blue link color */
-  font-weight: bold;
-  text-decoration: none;
-}
-a:hover {
-  color: #ff99ff !important;        /* Pink-ish hover color */
-}
