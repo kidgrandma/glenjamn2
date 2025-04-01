@@ -288,12 +288,35 @@
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
 
+			var audio = new Audio('Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3');
+			audio.play();
+			audio.pause();
+
+			var play = document.getElementById("playSong");
+		    var pause = document.getElementById("pauseSong");
+		    var playing = document.getElementById("playing");
+
+			function playAudio() {
+			  audio.play();
+			  play.classList.remove("show");
+			  pause.classList.add("show");
+			  playing.classList.add("show");
+			}
+
+			function pauseAudio() {
+			  audio.pause();
+			  play.classList.add("show");
+			  pause.classList.remove("show");
+			  playing.classList.remove("show");
+			}
+
 			function toggleNav() {
 				var menu = document.getElementById("nav");
 				var btn = document.getElementById("menuToggle");
 				menu.classList.toggle("showNav");
 				btn.classList.toggle("open");
 			}
+
 
 		</script>
 	</body>
