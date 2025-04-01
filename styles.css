@@ -24,24 +24,10 @@ a {
 a:hover {
 	color: #FFCE95;
 }
-.container,
-.contact,
-.userDetails,
-.userUrl,
-.musicPlayer {
-    background: rgba(0, 0, 0, 0.7);
-    /* Ensure text inside remains legible */
-    color: #fff;
-}
-
-/* If you want to adjust specific container headers (like in .contact or .userDetails) */
-.contact h3,
-.userDetails h3 {
-    background: rgba(0, 0, 0, 0.85);
-    border-bottom: 1px solid #555;
-}
 .container {
-	background: #fff;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	width: 95%;
 	max-width: 960px;
 	margin: auto;
@@ -49,7 +35,9 @@ a:hover {
 
 header {
 	position: relative;
-	background: #1559BB;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	padding: 10px;
 	display: grid;
 }
@@ -165,13 +153,13 @@ header button#menuToggle svg {
 
 .contact h3,
 .userDetails h3 {
-	background: #639BD0;
-	color: #fff;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	font-size: 13px;
 	font-weight: bold;
 	padding: 5px 10px;
 	margin: 0;
-	border-bottom: 1px solid #ccc;
 }
 
 .contactNav ul {
@@ -278,8 +266,8 @@ header button#menuToggle svg {
 	position: absolute;
 	right: 14px;
 	top: 13px;
-	background: #333;
-	color: #fff;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
 	border-radius: 5px;
 	display: inline-block;
 	width: 80%;
@@ -341,14 +329,16 @@ header button#menuToggle svg {
 }
 
 .userDetails th:first-child {
-	background: #B0D0F2;
-	color: #527DAB;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	width: 120px;
 }
 
 .userDetails th:last-child {
-	background: #D6EBF7;
-	width: 226px;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	font-weight: normal;
 }
 
@@ -366,14 +356,17 @@ header button#menuToggle svg {
 
 .right h3 {
 	display:  block;
-	background: #FFCE95;
-	color: #FD741B;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	padding: 2px 10px;
 	font-size: 14px;
 }
 
 .right .blurb h4 {
-	color: #FD741B;
+   	background: rgba(0, 0, 0, 0.7);
+   	color: #000000;
+	border-bottom: 1px solid #555;
 	margin: 0;
 	padding: 0;
 }
