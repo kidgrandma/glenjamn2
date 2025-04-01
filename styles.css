@@ -108,7 +108,32 @@ header button#menuToggle svg {
 	line-height: 4px;
 	font-size: 13px;
 }
+.panel {
+  margin-bottom: 1em;
+  border-left: 2px solid #6699cc;
+  border-right: 2px solid #6699cc;
+  border-bottom: 2px solid #6699cc; }
 
+.panel-title {
+  display: block;
+  padding: .25em  .75em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  color: white;
+  background: #6699cc; }
+.panel-body {
+  padding: 3px;
+  display: grid;
+  grid-template-columns: calc(40% - 3px) 60%;
+  grid-gap: 3px;
+  box-sizing: border-box; }
+
+.panel-body .panel-key {
+  padding: 3px;
+  font-weight: 700;
+  color: #336699;
+  background: #b1d0f0; }
 .onlineNow {
 	position: relative;
 	margin-left: 20px;
