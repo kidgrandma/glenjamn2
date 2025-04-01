@@ -6,7 +6,7 @@ body {
   font-size: 14px;
 	color: #fff;
   background-color: #000; /* Fallback background in case image fails */
-  background: #000 url('images/SOMEART.jpg') no-repeat center center fixed;
+  background: #000 url('images/glenbackground.png') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -540,30 +540,5 @@ header button#menuToggle svg {
 		padding: 0;
 	}
 }
-/* ---------------------------------------------------
-   Vibrant Color Overrides for a "Blog Era" Feel
------------------------------------------------------*/
 
-/* Links: bright yellow with a hot pink hover */
-a {
-  color: #2e37ff; 
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-a:hover {
-  color: #ff66cc;  /* Hot Pink */
-}
 
-/* Headers: mix in vibrant colors */
-h1 {
-  color: #66ff66;  /* Bright Green */
-}
-h2 {
-  color: #ff66cc;  /* Hot Pink */
-}
-h3 {
-  color: ##2e37ff;  /* Bright Yellow */
-}
-h4 {
-  color: #66ccff;  /* Electric Blue */
