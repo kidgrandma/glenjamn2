@@ -59,6 +59,7 @@ header button#menuToggle svg {
 .nav {
 	grid-column: 1/4;
 	grid-row: 3;
+	font-size: 10px;
 	margin: 15px 0 0 0;
 	display: flex;
 }
@@ -70,6 +71,7 @@ header button#menuToggle svg {
 
 .nav div a {
 	color: #fff;
+	font-size: 10px;
 	font-weight: normal;
 }
 
