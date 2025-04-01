@@ -125,17 +125,15 @@
 					</div>
 <div class="musicPlayer">
    <audio id="audio" preload="auto">
-	   <!-- audio: Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3 -->
+     <!-- audio: Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3 -->
      <source src="Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3" type="audio/mp3">
      Your browser does not support the audio element.
    </audio>
-   <button id="playSong" type="button" onClick="document.getElementById('audio').play(); playAudio();">
-     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+   <button id="playPauseBtn" type="button">
+     <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
        <path d="M3 22v-20l18 10-18 10z"/>
      </svg>
-   </button>
-   <button id="pauseSong" type="button" onClick="document.getElementById('audio').pause(); pauseAudio();">
-     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+     <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display:none;">
        <path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/>
      </svg>
    </button>
@@ -144,7 +142,7 @@
      <span class="artist">Daft Punk</span>
      <div id="playing"></div>
    </div>
- </div>
+</div>
 <div class="panel">
                 <span class="panel-title">GLENJAMN's Interests</span>
                 <div class="panel-body">
@@ -302,38 +300,36 @@
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
 			// music player
-			var audio = new Audio('robot.mp3');
-			audio.play();
-			audio.pause();
-		var audio = new Audio('Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3');
- 			audio.play();
- 			audio.pause();
- 
- 			var play = document.getElementById("playSong");
- 		    var pause = document.getElementById("pauseSong");
- 		    var playing = document.getElementById("playing");
- 
- 			function playAudio() {
- 			  audio.play();
- 			  play.classList.remove("show");
- 			  pause.classList.add("show");
- 			  playing.classList.add("show");
- 			}
- 
- 			function pauseAudio() {
- 			  audio.pause();
- 			  play.classList.add("show");
- 			  pause.classList.remove("show");
- 			  playing.classList.remove("show");
- 			}
+const audio = document.getElementById('audio');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const playIcon = document.getElementById('playIcon');
+const pauseIcon = document.getElementById('pauseIcon');
+const playingIndicator = document.getElementById('playing');
 
-			function toggleNav() {
-				var menu = document.getElementById("nav");
-				var btn = document.getElementById("menuToggle");
-				menu.classList.toggle("showNav");
-				btn.classList.toggle("open");
-			}
+// Single button to handle both play/pause
+playPauseBtn.addEventListener('click', function() {
+  if (audio.paused) {
+    audio.play();
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+    playingIndicator.style.opacity = '1';
+    playingIndicator.style.display = 'block';
+  } else {
+    audio.pause();
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+    playingIndicator.style.opacity = '0';
+    playingIndicator.style.display = 'none';
+  }
+});
 
+// Update button when audio ends
+audio.addEventListener('ended', function() {
+  playIcon.style.display = 'block';
+  pauseIcon.style.display = 'none';
+  playingIndicator.style.opacity = '0';
+  playingIndicator.style.display = 'none';
+});
 		</script>
 	</body>
 </html>
