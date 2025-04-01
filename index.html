@@ -143,12 +143,12 @@
     <source src="Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
-  <button id="playSong" type="button" onClick="document.getElementById('audio').play(); playAudio();">
+  <button id="playSong" type="button" onClick="playAudio();">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M3 22v-20l18 10-18 10z"/>
     </svg>
   </button>
-  <button id="pauseSong" type="button" onClick="document.getElementById('audio').pause(); pauseAudio();">
+  <button id="pauseSong" type="button" onClick="pauseAudio();">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/>
     </svg>
@@ -287,32 +287,31 @@
 			displayName[6].innerHTML = userName;
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
+var audio = document.getElementById("audio");
+var play = document.getElementById("playSong");
+var pause = document.getElementById("pauseSong");
+var playing = document.getElementById("playing");
 
-			var audio = document.getElementById("audio");
-			var play = document.getElementById("playSong");
-		    var pause = document.getElementById("pauseSong");
-		    var playing = document.getElementById("playing");
+function playAudio() {
+  audio.play();
+  play.classList.remove("show");
+  pause.classList.add("show");
+  playing.classList.add("show");
+}
 
-			function playAudio() {
-			  audio.play();
-			  play.classList.remove("show");
-			  pause.classList.add("show");
-			  playing.classList.add("show");
-			}
+function pauseAudio() {
+  audio.pause();
+  play.classList.add("show");
+  pause.classList.remove("show");
+  playing.classList.remove("show");
+}
 
-			function pauseAudio() {
-			  audio.pause();
-			  play.classList.add("show");
-			  pause.classList.remove("show");
-			  playing.classList.remove("show");
-			}
-
-			function toggleNav() {
-				var menu = document.getElementById("nav");
-				var btn = document.getElementById("menuToggle");
-				menu.classList.toggle("showNav");
-				btn.classList.toggle("open");
-			}
+function toggleNav() {
+  var menu = document.getElementById("nav");
+  var btn = document.getElementById("menuToggle");
+  menu.classList.toggle("showNav");
+  btn.classList.toggle("open");
+}
 
 
 		</script>
