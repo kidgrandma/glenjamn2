@@ -209,7 +209,7 @@ header button#menuToggle svg {
 	margin: 0;
 }
 .network {
-  background: #000 url('images/SOMEART.jpg') no-repeat center center;
+  background: #000;
   background-size: cover;
   color: #fff;
   border: 1px solid #555;
