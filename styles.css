@@ -10,16 +10,6 @@ body {
   background-size: cover;
 }
 
-@media screen and (max-width: 630px) {
-    .main {
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-    }
-    .left, .right {
-        grid-column: auto;  /* Let them stay in their defined grid cells */
-        max-width: none;    /* Remove fixed max-width if necessary */
-        margin: 0 5px;      /* Optional: adjust margins for spacing */
-    }
-}
 a {
 	font-weight: bold;
 	text-decoration: none;
