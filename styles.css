@@ -364,7 +364,7 @@ header button#menuToggle svg {
 	text-align: center;
 	padding: 20px 10px;
 	background: #000;
-	border: 1px solid #000;
+	border: 1px solid #555;
 	font-size: 18px;
 	font-weight: bold;
 }
