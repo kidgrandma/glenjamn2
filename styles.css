@@ -61,59 +61,60 @@ header {
 .nav div a:hover {
 	color: #FFCE95;
 }
-    .full-glitch {
+     .hyper-glitch {
         position: relative;
         display: inline-block;
     }
-    .glitch-chunk {
+    
+    .bracket-glitch {
         display: inline-block;
         position: relative;
-        animation: rainbow-glitch 1.5s infinite linear;
+        animation: 
+            color-flicker 0.1s infinite,
+            position-jitter 0.3s infinite;
     }
-    .glitch-chunk:nth-child(2n) {
-        animation-delay: 0.2s;
+    
+    .date-glitch {
+        display: inline-block;
+        animation: date-flicker 0.15s infinite;
     }
-    .glitch-chunk:nth-child(3n) {
-        animation-delay: 0.4s;
+    
+    @keyframes color-flicker {
+        0%, 100% { color: white; text-shadow: 0 0 3px red; }
+        25% { color: yellow; text-shadow: 0 0 5px blue; }
+        50% { color: cyan; text-shadow: 0 0 2px magenta; }
+        75% { color: magenta; text-shadow: 0 0 4px yellow; }
     }
-    .glitch-chunk:nth-child(5n) {
-        animation-delay: 0.1s;
+    
+    @keyframes position-jitter {
+        0%, 100% { transform: translate(0,0); }
+        20% { transform: translate(-1px,-1px); }
+        40% { transform: translate(0,1px); }
+        60% { transform: translate(1px,0); }
+        80% { transform: translate(1px,1px); }
     }
-    @keyframes rainbow-glitch {
-        0%, 70% { transform: translate(0,0); color: inherit; text-shadow: none; }
-        71% { transform: translate(-1px,1px); color: #ff0000; text-shadow: 0 0 3px #ff0000; }
-        72% { transform: translate(2px,-1px); color: #00ff00; text-shadow: 0 0 3px #00ff00; }
-        73% { transform: translate(0,0); color: #0000ff; text-shadow: 0 0 3px #0000ff; }
-        74% { transform: translate(1px,2px); color: #ffff00; text-shadow: 0 0 3px #ffff00; }
-        75% { transform: translate(-2px,-1px); color: #ff00ff; text-shadow: 0 0 3px #ff00ff; }
-        76% { transform: translate(0,0); color: #00ffff; text-shadow: 0 0 3px #00ffff; }
-        77% { transform: translate(0,0); color: inherit; text-shadow: none; }
+    
+    @keyframes date-flicker {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
     }
-    .full-glitch::before {
+    
+    /* Add scanlines for extra glitch effect */
+    .hyper-glitch::after {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(
-            0deg,
-            rgba(255,0,0,0.1) 0%,
-            rgba(0,255,0,0.1) 20%,
-            rgba(0,0,255,0.1) 40%,
-            rgba(255,255,0,0.1) 60%,
-            rgba(255,0,255,0.1) 80%,
-            rgba(0,255,255,0.1) 100%
+        background: repeating-linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(255,255,255,0.05) 1px,
+            transparent 2px
         );
-        mix-blend-mode: overlay;
         pointer-events: none;
-        animation: bg-pan 3s linear infinite;
     }
-    @keyframes bg-pan {
-        0% { background-position: 0% 0%; }
-        100% { background-position: 100% 100%; }
-    }
-
 .main {
 	display: grid;
 	grid-template-columns: 44% 54%;
