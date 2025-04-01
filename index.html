@@ -140,7 +140,7 @@
 					</div>
 					<div class="musicPlayer">
   <audio id="audio" preload="auto">
-    <source src="Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3" type="audio/mp3">
+    <source src="robot.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
   <button id="playSong" type="button" onClick="playAudio();">
@@ -287,6 +287,7 @@
 			displayName[6].innerHTML = userName;
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
+
 var audio = document.getElementById("audio");
 var play = document.getElementById("playSong");
 var pause = document.getElementById("pauseSong");
@@ -305,14 +306,6 @@ function pauseAudio() {
   pause.classList.remove("show");
   playing.classList.remove("show");
 }
-
-function toggleNav() {
-  var menu = document.getElementById("nav");
-  var btn = document.getElementById("menuToggle");
-  menu.classList.toggle("showNav");
-  btn.classList.toggle("open");
-}
-
 
 		</script>
 	</body>
