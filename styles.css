@@ -39,23 +39,6 @@ header {
 	line-height: 0;
 }
 
-header button#menuToggle {
-	z-index: 1000;
-	position: absolute;
-	top: 6px;
-	left: 0px;
-	background: transparent;
-	outline: 0;
-	border: 0;
-	display: none;
-}
-
-header button#menuToggle svg {
-	fill: #fff;
-	width: 40px;
-	height: 40px;
-}
-
 .nav {
 	grid-column: 1/4;
 	grid-row: 3;
@@ -112,9 +95,9 @@ header button#menuToggle svg {
 }
 .panel {
   margin-bottom: 1em;
-  border-left: 2px solid #6699cc;
-  border-right: 2px solid #6699cc;
-  border-bottom: 2px solid #6699cc; }
+  border-left: 2px solid #555;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555; }
 
 .panel-title {
   display: block;
@@ -123,7 +106,7 @@ header button#menuToggle svg {
   font-size: 12px;
   line-height: 1;
   color: white;
-  background: #6699cc; }
+  background: #000; }
 .panel-body {
   padding: 3px;
   display: grid;
@@ -134,8 +117,8 @@ header button#menuToggle svg {
 .panel-body .panel-key {
   padding: 3px;
   font-weight: 700;
-  color: #336699;
-  background: #b1d0f0; }
+  color: #555;
+  background: #000; }
 .onlineNow {
 	position: relative;
 	margin-left: 20px;
@@ -206,7 +189,7 @@ header button#menuToggle svg {
 
 .contactNav ul li:hover a,
  .contactNav ul li:hover svg{
-	color: #66ccff;
+	color: #fff;
 	fill: #FFCE95;
 }
 
