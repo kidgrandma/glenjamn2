@@ -10,13 +10,16 @@ body {
   background-size: cover;
 }
 
-/* Mobile friendly: Remove fixed background on small devices */
-@media screen and (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
+@media screen and (max-width: 630px) {
+    .main {
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+    }
+    .left, .right {
+        grid-column: auto;  /* Let them stay in their defined grid cells */
+        max-width: none;    /* Remove fixed max-width if necessary */
+        margin: 0 5px;      /* Optional: adjust margins for spacing */
+    }
 }
-
 a {
 	font-weight: bold;
 	text-decoration: none;
@@ -532,4 +535,44 @@ header button#menuToggle svg {
 		padding: 0;
 	}
 }
+/* ---------------------------------------------------
+   Vibrant Color Overrides for a "Blog Era" Feel
+-----------------------------------------------------*/
 
+/* Links: bright yellow with a hot pink hover */
+a {
+  color: #ffcc00;  /* Bright Yellow */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #ff66cc;  /* Hot Pink */
+}
+
+/* Headers: mix in vibrant colors */
+h1 {
+  color: #66ff66;  /* Bright Green */
+}
+h2 {
+  color: #ff66cc;  /* Hot Pink */
+}
+h3 {
+  color: #ffcc00;  /* Bright Yellow */
+}
+h4 {
+  color: #66ccff;  /* Electric Blue */
+}
+/* For smaller headers, you can use white for contrast */
+h5, h6 {
+  color: #ffffff;
+}
+
+/* Example: If you want to update specific container headers like in .contact or .userDetails */
+.contact h3,
+.userDetails h3,
+.right h3,
+.right .blurb h4 {
+  color: #ffcc00;   /* Apply vibrant color, override if needed */
+  border-bottom: 1px solid #555; /* Retain the subtle gray border */
+}
