@@ -137,20 +137,27 @@
 					<div class="userUrl">
 						<h4>MySpace URL:</h4>
 						<a href="">http://www.instagram.com/glenjamn</a>
-					<div class="musicPlayer">
-						<!-- audio: robot.mp3 -->
-						<button id="playSong" class="show" type="button" onClick="audio.play(); playAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
-						</button>
-						<button id="pauseSong" type="button" onClick="audio.pause(); pauseAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
-						</button>
-						<div class="songName">
-							<span class="title">Alive 2007 - Robot Rock/Oh Yeah </span>
-							<span class="artist">My Chemical Romance</span>
-							<div id="playing"></div>
-						</div>
-					</div>
+<div class="musicPlayer">
+   <audio id="audio" preload="auto">
+     <source src="Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3" type="audio/mp3">
+     Your browser does not support the audio element.
+   </audio>
+   <button id="playSong" type="button" onClick="document.getElementById('audio').play(); playAudio();">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+       <path d="M3 22v-20l18 10-18 10z"/>
+     </svg>
+   </button>
+   <button id="pauseSong" type="button" onClick="document.getElementById('audio').pause(); pauseAudio();">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+       <path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/>
+     </svg>
+   </button>
+   <div class="songName">
+     <span class="title">Alive 2007 - Robot Rock/Oh Yeah</span>
+     <span class="artist">Daft Punk</span>
+     <div id="playing"></div>
+   </div>
+ </div>
 </div>
 <div class="panel">
                 <span class="panel-title">GLENJAMN's Interests</span>
@@ -303,24 +310,27 @@
 			var audio = new Audio('robot.mp3');
 			audio.play();
 			audio.pause();
-
-			var play = document.getElementById("playSong");
-		    var pause = document.getElementById("pauseSong");
-		    var playing = document.getElementById("playing");
-
-			function playAudio() {
-			  audio.play();
-			  play.classList.remove("show");
-			  pause.classList.add("show");
-			  playing.classList.add("show");
-			}
-
-			function pauseAudio() {
-			  audio.pause();
-			  play.classList.add("show");
-			  pause.classList.remove("show");
-			  playing.classList.remove("show");
-			}
+		var audio = new Audio('Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3');
+ 			audio.play();
+ 			audio.pause();
+ 
+ 			var play = document.getElementById("playSong");
+ 		    var pause = document.getElementById("pauseSong");
+ 		    var playing = document.getElementById("playing");
+ 
+ 			function playAudio() {
+ 			  audio.play();
+ 			  play.classList.remove("show");
+ 			  pause.classList.add("show");
+ 			  playing.classList.add("show");
+ 			}
+ 
+ 			function pauseAudio() {
+ 			  audio.pause();
+ 			  play.classList.add("show");
+ 			  pause.classList.remove("show");
+ 			  playing.classList.remove("show");
+ 			}
 
 			function toggleNav() {
 				var menu = document.getElementById("nav");
