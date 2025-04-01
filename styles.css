@@ -195,7 +195,7 @@ header button#menuToggle svg {
 
 .contactNav ul li:hover a,
  .contactNav ul li:hover svg{
-	color: #FFCE95;
+	color: #66ccff;
 	fill: #FFCE95;
 }
 
@@ -254,7 +254,7 @@ header button#menuToggle svg {
 }
 
 .musicPlayer button:focus {
-	border-color: #ccc;
+	border-color: #66ccff;
 }
 
 .musicPlayer button:hover {
@@ -333,7 +333,7 @@ header button#menuToggle svg {
 
 .userDetails th:first-child {
    	background: rgba(0, 0, 0, 0.7);
-   	color: #fff;
+   	color: #66ccff;
 	border-bottom: 1px solid #555;
 	width: 120px;
 }
@@ -368,7 +368,7 @@ header button#menuToggle svg {
 
 .right .blurb h4 {
    	background: rgba(0, 0, 0, 0.7);
-   	color: #fff;
+   	color: #66ccff;
 	border-bottom: 1px solid #555;
 	margin: 0;
 	padding: 0;
@@ -402,7 +402,7 @@ header button#menuToggle svg {
 }
 
 .top8 div a:hover img {
-  border-color: #FFCE95;
+  border-color: #66ccff;
 }
 
 @media screen and (max-width: 940px) {
@@ -541,7 +541,7 @@ header button#menuToggle svg {
 
 /* Links: bright yellow with a hot pink hover */
 a {
-  color: #ffcc00;  /* Bright Yellow */
+  color: #2e37ff; 
   font-weight: bold;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -558,21 +558,7 @@ h2 {
   color: #ff66cc;  /* Hot Pink */
 }
 h3 {
-  color: #ffcc00;  /* Bright Yellow */
+  color: ##2e37ff;  /* Bright Yellow */
 }
 h4 {
   color: #66ccff;  /* Electric Blue */
-}
-/* For smaller headers, you can use white for contrast */
-h5, h6 {
-  color: #ffffff;
-}
-
-/* Example: If you want to update specific container headers like in .contact or .userDetails */
-.contact h3,
-.userDetails h3,
-.right h3,
-.right .blurb h4 {
-  color: #ffcc00;   /* Apply vibrant color, override if needed */
-  border-bottom: 1px solid #555; /* Retain the subtle gray border */
-}
