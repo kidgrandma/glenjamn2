@@ -390,11 +390,8 @@ font-size: 12px;
   }
   
   @keyframes blink {
+    0%, 100% { opacity: 1; }
     50% { opacity: 0; }
-  }
-  
-  .date-pulse {
-    animation: pulse 1.5s infinite, color-change 4s infinite;
   }
   
   @keyframes pulse {
@@ -403,43 +400,16 @@ font-size: 12px;
     100% { transform: scale(1); }
   }
   
-  @keyframes color-change {
-    0% { color: #ff66cc; }
-    25% { color: #00ffff; }
-    50% { color: #ffcc00; }
-    75% { color: #ff00ff; }
-    100% { color: #ff66cc; }
+  @keyframes color-shift {
+    0% { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+    33% { color: #ff00ff; text-shadow: 0 0 5px #ff00ff; }
+    66% { color: #ffff00; text-shadow: 0 0 5px #ffff00; }
+    100% { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
   }
   
-  .music-box {
-    animation: border-glow 2s infinite alternate;
-  }
-  
-  @keyframes border-glow {
-    0% { opacity: 0.8; }
-    100% { opacity: 1; }
-  }
-  
-  .rsvp-btn:hover {
-    animation: shake 0.5s;
-  }
-  
-  .rsvp-btn:hover .btn-glitch {
-    animation: btn-glitch 0.3s steps(2) infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(0); }
-    25% { transform: translate(-5px, 5px); }
-    50% { transform: translate(5px, -5px); }
-    75% { transform: translate(-5px, 0); }
-    100% { transform: translate(0); }
-  }
-  
-  @keyframes btn-glitch {
-    0% { opacity: 0; left: -10%; }
-    50% { opacity: 0.5; left: 0; }
-    100% { opacity: 0; left: 10%; }
+  button:hover span {
+    left: 100%;
+    top: 100%;
   }
 .top8 {
 	display: grid;
