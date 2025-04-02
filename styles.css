@@ -207,7 +207,7 @@ font-weight: 700;
 .userUrl {
 	padding: 5px;
 	margin: 20px 0;
-	border: 1px solid #00ffff;
+	border: 1px solid #fff;
 }
 
 .userUrl h4 {
@@ -337,7 +337,7 @@ font-weight: 700;
 
 .userDetails th:first-child {
    	background: #000;
-   	color: #555;
+   	color: #66ccff;
 	border-bottom: 1px solid #555;
 	width: 120px;
 }
