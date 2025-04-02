@@ -226,7 +226,7 @@ font-size: 12px;
 
 .userDetails th:first-child {
    	background: #000;
-   	color: #66ccff;
+   	color: #555;
 	border-bottom: 1px solid #555;
 	width: 120px;
 }
