@@ -126,6 +126,7 @@ header {
 .panel-body .panel-key {
   padding: 3px;
 font-size: 12px;
+font-weight: 700;
   color: #555;
   background: #000; }
 
