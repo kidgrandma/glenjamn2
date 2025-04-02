@@ -485,7 +485,7 @@ font-weight: 700;
 	grid-gap: 10px;
 	background: #000;
 	border: 1px solid #555;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	justify-content: space-around;
 }
 
@@ -500,6 +500,7 @@ font-weight: 700;
 	width: 80px;
 	margin: auto;
 	border-radius: 5px;
+	padding: 10px 0;
 	border: 3px solid transparent;
 }
 
