@@ -201,99 +201,74 @@
 					<div class="blurb">
 						<h3><span class="userName"></span>'s Blurbs</h3>
 </div>
-<div style="font-family: Verdana, sans-serif; max-width: 500px; margin: 0 auto; background: rgba(0,0,0,0.7); padding: 5px; border: 2px solid transparent; border-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff) 1; text-align: center; position: relative; backdrop-filter: blur(2px);">
-<img src="images/SOMEART.png" alt="Flyer Art" style="display: block; margin: 0 auto; max-width: 50%;">
-  <!-- About Me Section -->
-  <div style="text-align: left; margin: 40px 0 25px 0; background: rgba(0,0,0,0.5); padding: 5px; border-left: 3px solid #ff00ff;">
-    <h4 style="color: #00ffff; font-weight: bold; margin-bottom: 10px; font-size: 1.2em; text-transform: uppercase;">
-      About me:
-    </h4>
-    <p style="font-size: 0.95em; line-height: 1.5; color: #fff;">
-      Soooo... I'm throwing <strong style="color: #ffff00;">ANOTHER</strong> art show for my new book with <strong style="color: #ff66cc;">[ISM]</strong>. The book is a <strong style="color: #ff00ff; font-style: italic;">clusterfuck</strong> of memories from that influential <strong style="color: #00ffff; animation: blink 1s step-end infinite;">Bloghouse era</strong>.
-    </p>
-    <p style="font-size: 0.95em; line-height: 1.5; color: #fff; margin-top: 10px;">
-      Shoutout to <strong style="color: #ffcc00;">SO-ME</strong> aka THE OG art director for <strong style="color: #ff0033;">Ed Banger Records</strong> for the artwork.
-    </p>
-  </div>
+ <div class="flyer-container">
+    <img src="images/SOMEART.png" alt="Flyer Art" class="flyer-image" />
 
-  <!-- Event Info -->
-  <div style="margin: 0 0 25px 0;">
-    <p style="color: #ff66cc; font-size: 0.9em; margin: 0 0 5px 0; font-weight: bold;">
-      OPENING RECEPTION: APRIL 9, 6-10PM
-    </p>
-    <p style="color: #aaa; font-size: 0.8em; margin: 0 0 15px 0;">
-      Exhibition Runs to April 19th
-    </p>
-    
-    <div style="display: flex; gap: 10px; margin: 15px 0;">
-      <div style="flex: 1; background: rgba(0,255,255,0.1); padding: 10px; border-top: 2px solid #00ffff;">
-        <p style="color: #00ffff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">LIMITED PRINTS</p>
-        <p style="color: #aaa; font-size: 0.7em; margin: 0;">SO-ME collab</p>
-      </div>
-      <div style="flex: 1; background: rgba(255,0,255,0.1); padding: 10px; border-top: 2px solid #ff00ff;">
-        <p style="color: #ff00ff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">BOOKS</p>
-        <p style="color: #aaa; font-size: 0.7em; margin: 0;">my.ISM editions</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Music Section -->
-  <div style="background: rgba(0,0,0,0.5); padding: 15px; margin: 0 0 20px 0; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: 
-        linear-gradient(45deg, 
-        transparent 25%, 
-        rgba(255,0,255,0.1) 25%, 
-        rgba(255,0,255,0.1) 50%, 
-        transparent 50%, 
-        transparent 75%, 
-        rgba(0,255,255,0.1) 75%, 
-        rgba(0,255,255,0.1) 100%);
-        background-size: 10px 10px;
-        animation: bg-scroll 1s linear infinite;
-        z-index: 0;"></div>
-    <div style="position: relative; z-index: 1;">
-      <p style="color: #ff66cc; font-size: 0.9em; margin: 0 0 8px 0; font-weight: bold;">MUSIC BY:</p>
-      <p style="color: #fff; font-size: 1.1em; margin: 0; font-family: 'Arial Black'; animation: glitch-text 2s infinite alternate;">
-        THEE MIKE B b2b BONOBO
+    <!-- About Me Section -->
+    <div class="section about-me">
+      <h4>About me:</h4>
+      <p>
+        Soooo... I'm throwing <strong class="color-another">ANOTHER</strong> art show for my new book with <strong class="color-ism">[ISM]</strong>.
+        The book is a <strong class="italic-clusterfuck">clusterfuck</strong> of memories from that influential
+        <strong class="blink">Bloghouse era</strong>.
       </p>
-      <p style="color: #aaa; font-size: 0.8em; margin: 5px 0 0 0;">+ FRIENDS!</p>
+      <p style="margin-top:10px;">
+        Shoutout to <strong class="color-some">SO-ME</strong> aka THE OG art director for <strong class="color-edbanger">Ed Banger Records</strong> for the artwork.
+      </p>
     </div>
+
+    <!-- Event Info -->
+    <div class="event-info">
+      <p class="title">OPENING RECEPTION: APRIL 9, 6-10PM</p>
+      <p class="sub">Exhibition Runs to April 19th</p>
+      <div class="highlights">
+        <div class="highlight">
+          <p>LIMITED PRINTS</p>
+          <p>SO-ME collab</p>
+        </div>
+        <div class="highlight">
+          <p>BOOKS</p>
+          <p>my.ISM editions</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Section -->
+    <div class="music-section">
+      <div class="music-content">
+        <p class="music-title">MUSIC BY:</p>
+        <p class="band-name">THEE MIKE B b2b BONOBO</p>
+        <p class="friends">+ FRIENDS!</p>
+      </div>
+    </div>
+
+    <!-- Drink Section -->
+    <div class="drink-section">
+      <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" alt="Guayaki" />
+      <p>DRINK: THX GUAYAKI!</p>
+    </div>
+
+    <!-- Location Info -->
+    <div class="location-info">
+      <p>
+        HVW8 Gallery<br />
+        661 N. Spaulding Ave. 90036
+      </p>
+      <p style="margin-top:15px; font-weight:bold; color:#ff66cc;">DAFTERPARTY:</p>
+      <p>
+        SILVERLAKE LOUNGE 10pm+<br />
+        2906 W. Sunset Blvd. 90026
+      </p>
+    </div>
+
+    <!-- RSVP Button -->
+    <button class="rsvp-button">
+      RSVP HERE. DO IT.
+      <span></span>
+    </button>
+
+    <p class="contact-info">Email: rsvp@hvw8.com</p>
   </div>
-
-  <!-- Drink Section -->
-  <div style="margin: 0 0 20px 0;">
-    <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
-         alt="Guayaki" 
-         style="width: 50px; height: 50px; object-fit: contain; margin: 0 auto 5px auto; display: block; animation: float 3s ease-in-out infinite;">
-    <p style="color: #aaa; font-size: 0.8em; margin: 0;">DRINK: THX GUAYAKI!</p>
-  </div>
-
-  <!-- Location Info -->
-  <div style="margin: 0 0 20px 0;">
-    <p style="color: #fff; font-size: 0.9em; margin: 0 0 3px 0;">
-      HVW8 Gallery<br>
-      661 N. Spaulding Ave. 90036
-    </p>
-    <p style="color: #ff66cc; font-size: 0.9em; margin: 15px 0 3px 0; font-weight: bold;">
-      DAFTERPARTY:
-    </p>
-    <p style="color: #fff; font-size: 0.9em; margin: 0 0 3px 0;">
-      SILVERLAKE LOUNGE 10pm+<br>
-      2906 W. Sunset Blvd. 90026
-    </p>
-  </div>
-
-  <!-- RSVP Button (Simplified) -->
-  <button style="background: #ff00ff; color: #fff; border: none; padding: 10px 25px; font-size: 0.9em; margin: 10px 0 0 0; cursor: pointer; transition: all 0.3s; position: relative;"
-          onmouseover="this.style.background='#ff66cc';" 
-          onmouseout="this.style.background='#ff00ff';">
-	  RSVP HERE. DO IT.
-    <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #fff; transform: scaleX(0); transition: transform 0.3s;"></span>
-  </button>
-
-  <p style="color: #aaa; font-size: 0.8em; margin: 15px 0 0 0;">Email: rsvp@hvw8.com</p>
-
-</div>
 	<div class="friends">
 						<h3><span class="userName"></span>'s Friend Space (Top 8)</h3>
 						<p style="font-weight: bold; margin-left: 10px;"><span class="userName"></span> has 223886 friends.</p>
