@@ -208,96 +208,132 @@
 					<div class="blurb">
 						<h3><span class="userName"></span>'s Blurbs</h3>
 <img src="images/SOMEART.png" alt="Flyer Art" style="display: block; margin: 0 auto; max-width: 50%;">
-<div class="vintage-flyer" style="font-family: Verdana, sans-serif; max-width: 500px; margin: 0 auto; background: #000; padding: 25px; border: 3px solid #ff0033; text-align: center; position: relative;">
+<div style="font-family: Verdana, sans-serif; max-width: 500px; margin: 0 auto; background: rgba(0,0,0,0.7); padding: 25px; border: 4px solid transparent; border-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff) 1; text-align: center; position: relative; backdrop-filter: blur(2px);">
 
-  <!-- Decorative Border Elements -->
-  <div style="position: absolute; top: 10px; left: 10px; color: #00ff00; font-family: 'Courier New'; font-size: 12px;">▲▲▲</div>
-  <div style="position: absolute; top: 10px; right: 10px; color: #00ff00; font-family: 'Courier New'; font-size: 12px;">▲▲▲</div>
-  <div style="position: absolute; bottom: 10px; left: 10px; color: #00ff00; font-family: 'Courier New'; font-size: 12px;">▼▼▼</div>
-  <div style="position: absolute; bottom: 10px; right: 10px; color: #00ff00; font-family: 'Courier New'; font-size: 12px;">▼▼▼</div>
+  <!-- Heavy ASCII Border Art -->
+  <div style="position: absolute; top: 5px; left: 5px; right: 5px; height: 15px; background: linear-gradient(90deg, 
+    transparent, transparent 20%, 
+    rgba(255,0,255,0.3) 20%, rgba(255,0,255,0.3) 30%,
+    transparent 30%, transparent 70%,
+    rgba(0,255,255,0.3) 70%, rgba(0,255,255,0.3) 80%,
+    transparent 80%, transparent); 
+    overflow: hidden; font-family: monospace; color: white; font-size: 18px; line-height: 1; white-space: nowrap;">
+    ✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧
+  </div>
+  <div style="position: absolute; bottom: 5px; left: 5px; right: 5px; height: 15px; background: linear-gradient(90deg, 
+    transparent, transparent 20%, 
+    rgba(0,255,255,0.3) 20%, rgba(0,255,255,0.3) 30%,
+    transparent 30%, transparent 70%,
+    rgba(255,0,255,0.3) 70%, rgba(255,0,255,0.3) 80%,
+    transparent 80%, transparent); 
+    overflow: hidden; font-family: monospace; color: white; font-size: 18px; line-height: 1; white-space: nowrap;">
+    ✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧✧
+  </div>
 
   <!-- About Me Section -->
-  <div style="text-align: left; margin-bottom: 25px;">
-    <h4 style="color: #00ffff; font-weight: bold; margin-bottom: 10px; font-size: 1.3em; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #ff0033; padding-bottom: 5px;">
+  <div style="text-align: left; margin-bottom: 25px; background: rgba(0,0,0,0.5); padding: 15px; border-left: 3px solid #ff00ff;">
+    <h4 style="color: #00ffff; font-weight: bold; margin-bottom: 10px; font-size: 1.3em; text-transform: uppercase; letter-spacing: 2px;">
       About me:
     </h4>
     
-    <p style="font-size: 1.1em; line-height: 1.5; color: #fff; margin-left: 10px;">
+    <p style="font-size: 1.1em; line-height: 1.5; color: #fff;">
       I got <strong style="color: #ff66cc; font-size: 1.2em; animation: blink 1s step-end infinite;">SHIT</strong> to show and stories to tell.<br><br>
-      Throwing my <strong style="color: #00ffff; text-decoration: underline;">SECOND ART SHOW</strong> on <strong style="color: #ff66cc; font-size: 1.2em; animation: pulse 1.5s infinite;">4/9</strong> with the homies at <strong style="color: #38f800; letter-spacing: 1px;">HVW8</strong>.<br><br>
+      Throwing my <strong style="color: #00ffff; text-decoration: underline;">SECOND ART SHOW</strong> on <strong style="color: #ff66cc; font-size: 1.2em; animation: pulse 1.5s infinite;">4/9</strong> with the homies at <strong style="color: #ffff00; letter-spacing: 1px;">HVW8</strong>.<br><br>
       This show is dedicated to all the stuff I love and hyping all my friends' dope shit. plain. simple.
     </p>
   </div>
 
-  <!-- Event Info Section -->
-  <div style="background: #111; padding: 15px; margin: 20px 0; border-left: 4px solid #ff0033; text-align: left;">
-    <h4 style="color: #00ffff; font-weight: bold; margin: 0 0 15px 0; font-size: 1.3em; text-transform: uppercase; letter-spacing: 1px;">
-      Event Info
-    </h4>
+  <!-- Event Info Section - Advertisement Style -->
+  <div style="background: rgba(0,0,0,0.7); padding: 15px; margin: 20px 0; border: 2px dashed #00ffff; position: relative;">
+    <div style="position: absolute; top: -10px; left: 20px; background: #000; padding: 0 10px; color: #ff00ff; font-weight: bold; font-size: 1.1em;">
+      EVENT INFO
+    </div>
     
-    <div style="margin-bottom: 20px;">
-      <p style="color: #ff66cc; font-size: 1.1em; margin: 0 0 5px 0; font-weight: bold;">
+    <div style="margin-bottom: 15px;">
+      <p style="color: #ff66cc; font-size: 1.1em; margin: 15px 0 5px 0; font-weight: bold; text-transform: uppercase;">
         OPENING RECEPTION
       </p>
-      <p style="color: #fff; font-size: 1em; margin: 0;">
-        Wednesday, April 9<br>
-        6-10PM
+      <p style="color: #fff; font-size: 1.1em; margin: 0; letter-spacing: 1px;">
+        WEDNESDAY, APRIL 9 • 6-10PM
       </p>
     </div>
     
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <div style="flex: 1; min-width: 120px;">
-        <p style="color: #38f800; margin: 0 0 5px 0; font-weight: bold; font-size: 0.9em;">LIMITED PRINTS</p>
-        <p style="color: #aaa; margin: 0; font-size: 0.8em;">SO-ME collab</p>
+    <div style="display: flex; gap: 15px; margin-top: 20px;">
+      <div style="flex: 1; background: rgba(255,255,255,0.1); padding: 10px; border-top: 3px solid #00ff00;">
+        <p style="color: #00ff00; margin: 0 0 5px 0; font-weight: bold; font-size: 1em;">LIMITED PRINTS</p>
+        <p style="color: #aaa; margin: 0; font-size: 0.9em;">SO-ME collab</p>
       </div>
-      <div style="flex: 1; min-width: 120px;">
-        <p style="color: #ffcc00; margin: 0 0 5px 0; font-weight: bold; font-size: 0.9em;">BOOKS</p>
-        <p style="color: #aaa; margin: 0; font-size: 0.8em;">my.ISM editions</p>
+      <div style="flex: 1; background: rgba(255,255,255,0.1); padding: 10px; border-top: 3px solid #ffcc00;">
+        <p style="color: #ffcc00; margin: 0 0 5px 0; font-weight: bold; font-size: 1em;">BOOKS</p>
+        <p style="color: #aaa; margin: 0; font-size: 0.9em;">my.ISM editions</p>
       </div>
     </div>
   </div>
 
-  <!-- Music Section -->
-  <div style="background: #000; padding: 15px; margin: 20px 0; border: 1px solid #00ffff; position: relative; overflow: hidden;">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, rgba(255,0,255,0.1), rgba(0,255,255,0.1)); z-index: 0;"></div>
-    <p style="font-size: 1.1em; margin: 0 0 10px 0; font-weight: bold; color: #ff66cc; position: relative; z-index: 1;">
-      MUSIC BY:
-    </p>
-    <p style="font-size: 1.3em; margin: 0; color: #00ffff; font-family: 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px; position: relative; z-index: 1; animation: color-shift 3s infinite;">
-      THEE MIKE B b2b BONOBO<br>+ SPECIAL GUESTS!
-    </p>
+  <!-- Music Section - Enhanced -->
+  <div style="background: rgba(0,0,0,0.7); padding: 15px; margin: 20px 0; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: 
+        linear-gradient(45deg, 
+        transparent 25%, 
+        rgba(255,0,255,0.1) 25%, 
+        rgba(255,0,255,0.1) 50%, 
+        transparent 50%, 
+        transparent 75%, 
+        rgba(0,255,255,0.1) 75%, 
+        rgba(0,255,255,0.1) 100%);
+        background-size: 10px 10px;
+        animation: bg-scroll 1s linear infinite;
+        z-index: 0;"></div>
+    
+    <div style="position: relative; z-index: 1;">
+      <p style="font-size: 1.1em; margin: 0 0 10px 0; font-weight: bold; color: #ff66cc; text-transform: uppercase;">
+        MUSIC BY:
+      </p>
+      <p style="font-size: 1.4em; margin: 0; color: #fff; font-family: 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 2px; 
+         animation: glitch-text 2s infinite alternate;">
+        THEE MIKE B b2b BONOBO<br>
+        <span style="font-size: 0.8em;">+ SPECIAL GUESTS!</span>
+      </p>
+    </div>
   </div>
 
-  <!-- Drink Section with Animated GIF -->
-  <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin: 20px 0; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 5px;">
+  <!-- Drink Section - Floating GIFs -->
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 25px 0;">
     <div style="flex: 1; text-align: right;">
       <p style="font-size: 1em; color: #fff; margin: 0;">
         DRINKS PROVIDED BY
       </p>
-      <p style="font-size: 1.2em; color: #38f800; font-weight: bold; margin: 5px 0 0 0; text-shadow: 0 0 5px rgba(56,248,0,0.5);">
+      <p style="font-size: 1.2em; color: #ffff00; font-weight: bold; margin: 5px 0 0 0;">
         GUAYAKI
       </p>
     </div>
-    <div style="flex: 0 0 80px;">
+    <div style="display: flex; gap: 5px;">
       <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWw4ZWxxaWVsZjZiOTZvaTRtYWFrNjl0Nzg1dnc4YTNqdm15aDJlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/duiacDD02IGUZD9fsp/giphy.gif" 
            alt="Guayaki" 
-           style="width: 100%; height: auto; border-radius: 5px; border: 1px solid #38f800;">
+           style="width: 50px; height: 50px; object-fit: contain; animation: float 3s ease-in-out infinite;">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWw4ZWxxaWVsZjZiOTZvaTRtYWFrNjl0Nzg1dnc4YTNqdm15aDJlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/duiacDD02IGUZD9fsp/giphy.gif" 
+           alt="Guayaki" 
+           style="width: 50px; height: 50px; object-fit: contain; animation: float 3s ease-in-out infinite 0.5s;">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWw4ZWxxaWVsZjZiOTZvaTRtYWFrNjl0Nzg1dnc4YTNqdm15aDJlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/duiacDD02IGUZD9fsp/giphy.gif" 
+           alt="Guayaki" 
+           style="width: 50px; height: 50px; object-fit: contain; animation: float 3s ease-in-out infinite 1s;">
     </div>
   </div>
 
-  <!-- RSVP Button -->
-  <button style="background: linear-gradient(to bottom, #ff3366, #ff0033); color: #fff; border: none; padding: 12px 30px; font-size: 1.1em; font-weight: bold; margin-top: 15px; cursor: pointer; position: relative; overflow: hidden; transition: all 0.3s; letter-spacing: 1px; border-radius: 3px; box-shadow: 0 2px 5px rgba(255,0,51,0.5);"
-          onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(255,0,51,0.7)';" 
-          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 5px rgba(255,0,51,0.5)';">
-    CLICK TO RSVP
-    <span style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(transparent, rgba(255,255,255,0.2), transparent); transform: rotate(30deg); transition: all 0.6s;"></span>
+  <!-- Glitch RSVP Button -->
+  <button style="background: #000; color: #fff; border: 2px solid #ff00ff; padding: 12px 30px; font-size: 1.1em; font-weight: bold; margin-top: 15px; cursor: pointer; position: relative; overflow: hidden; letter-spacing: 2px; text-transform: uppercase;"
+          onmouseover="this.style.animation='glitch-effect 0.3s linear infinite';" 
+          onmouseout="this.style.animation='none';">
+    <span style="position: relative;">RSVP NOW</span>
+    <span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); animation: shine 2s infinite;"></span>
   </button>
 
   <!-- Footer -->
-  <div style="color: #666; font-size: 0.7em; margin-top: 25px; font-family: 'Courier New';">
-    [ HVW8 GALLERY • 661 N Spaulding Ave • Los Angeles ]
+  <div style="color: #aaa; font-size: 0.8em; margin-top: 25px; font-family: 'Courier New'; letter-spacing: 1px;">
+    HVW8 GALLERY • 661 N SPAULDING AVE • LOS ANGELES
   </div>
 </div>
+
 
 					<div class="friends">
 						<h3><span class="userName"></span>'s Friend Space (Top 8)</h3>
