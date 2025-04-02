@@ -67,7 +67,7 @@ header {
 }
 
 .nav div a:hover {
-	color: #FFCE95;
+	color: #4cbbff;
 }
 .main {
 	display: grid;
@@ -98,7 +98,7 @@ header {
 
 .profile .profileInfo p {
 	line-height: 4px;
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .panel {
