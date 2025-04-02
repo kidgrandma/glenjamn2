@@ -61,60 +61,6 @@ header {
 .nav div a:hover {
 	color: #FFCE95;
 }
-     .hyper-glitch {
-        position: relative;
-        display: inline-block;
-    }
-    
-    .bracket-glitch {
-        display: inline-block;
-        position: relative;
-        animation: 
-            color-flicker 0.1s infinite,
-            position-jitter 0.3s infinite;
-    }
-    
-    .date-glitch {
-        display: inline-block;
-        animation: date-flicker 0.15s infinite;
-    }
-    
-    @keyframes color-flicker {
-        0%, 100% { color: white; text-shadow: 0 0 3px red; }
-        25% { color: yellow; text-shadow: 0 0 5px blue; }
-        50% { color: cyan; text-shadow: 0 0 2px magenta; }
-        75% { color: magenta; text-shadow: 0 0 4px yellow; }
-    }
-    
-    @keyframes position-jitter {
-        0%, 100% { transform: translate(0,0); }
-        20% { transform: translate(-1px,-1px); }
-        40% { transform: translate(0,1px); }
-        60% { transform: translate(1px,0); }
-        80% { transform: translate(1px,1px); }
-    }
-    
-    @keyframes date-flicker {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
-    }
-    
-    /* Add scanlines for extra glitch effect */
-    .hyper-glitch::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: repeating-linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(255,255,255,0.05) 1px,
-            transparent 2px
-        );
-        pointer-events: none;
-    }
 .main {
 	display: grid;
 	grid-template-columns: 44% 54%;
@@ -375,38 +321,69 @@ font-size: 12px;
 	padding: 0;
 	margin:0 0 20px 0;
 }
-
-
- .glitch {
-    position: relative;
-  }
-  .glitch span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #000;
-  }
-  .glitch span:nth-child(1) {
-    color: #ff00ff;
-    animation: glitch-effect 3s infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  }
-  .glitch span:nth-child(2) {
-    color: #00ffff;
-    animation: glitch-effect 2s infinite reverse;
-    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
-  }
-  
-  /* Animations */
-  @keyframes glitch-effect {
-    0% { transform: translate(0); }
-    20% { transform: translate(-3px, 3px); }
-    40% { transform: translate(-3px, -3px); }
-    60% { transform: translate(3px, 3px); }
-    80% { transform: translate(3px, -3px); }
-    100% { transform: translate(0); }
-  }
+  .glitch-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .rainbow-glitch {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        animation: 
+            rainbow-flicker 0.8s infinite,
+            glitch-movement 0.4s infinite;
+        text-shadow: 
+            1px 0 #00ffcc, 
+            -1px 0 #3300ff;
+    }
+    
+    .bracket {
+        color: #aaa;
+    }
+    
+    .date {
+        color: #888;
+        font-size: 0.9em;
+    }
+    
+    /* Rainbow color cycling */
+    @keyframes rainbow-flicker {
+        0% { color: #ff0033; }
+        14% { color: #ff6600; }
+        28% { color: #ffcc00; }
+        42% { color: #00ff66; }
+        56% { color: #0066ff; }
+        70% { color: #6600ff; }
+        84% { color: #ff00cc; }
+        100% { color: #ff0033; }
+    }
+    
+    /* Micro-movements for glitch effect */
+    @keyframes glitch-movement {
+        0%, 100% { transform: translate(0); }
+        25% { transform: translate(-1px, 1px); }
+        50% { transform: translate(1px, -1px); }
+        75% { transform: translate(1px, 1px); }
+    }
+    
+    /* Optional scanline overlay */
+    .glitch-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.03),
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+        pointer-events: none;
+    }
   
   .blink {
     animation: blink 1s step-end infinite;
