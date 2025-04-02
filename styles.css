@@ -519,6 +519,32 @@ font-weight: 700;
 }
 
 @media screen and (max-width: 732px) {
+	#menuToggle {
+		display: block !important;
+	}
+	.showNav {
+		height: 100% !important;
+	}
+	.open svg {
+		transform: rotate(135deg);
+	}
+
+	#menuToggle svg:hover {
+		cursor: pointer;
+	}
+
+	#menuToggle svg {
+		transition: 0.2s ease all;
+	}
+	#menuToggle svg.close {
+		display: none;	
+	}
+	#menuToggle.open svg.opened {
+		display: none !important;
+	}
+	#menuToggle.open svg.close {
+		display: block !important;
+	}
 	.nav {
 		flex-direction: column;
 		text-align: center;
