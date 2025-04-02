@@ -81,8 +81,9 @@ header {
 }
 
 .profile {
-  display: flex;
-  align-items: flex-start;
+	display: grid;
+	grid-gap: 1em;
+	align-items: center;
 }
 
 .profile .profilePicture {
@@ -98,6 +99,7 @@ header {
 .profile .profileInfo p {
 	line-height: 4px;
 	font-size: 11px;
+	text-align: top;
 }
 
 .panel {
