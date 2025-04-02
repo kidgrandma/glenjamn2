@@ -83,7 +83,7 @@ header {
 .profile {
 	display: grid;
 	grid-gap: 1em;
-	align-items: center;
+	align-items: top;
 }
 
 .profile .profilePicture {
