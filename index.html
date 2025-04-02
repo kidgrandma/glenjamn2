@@ -124,7 +124,7 @@
 						<a href="">http://www.instagram.com/glenjamn</a>
 					</div>
 					<div class="musicPlayer">
-						<!-- audio: https://www.youtube.com/watch?reload=9&v=UgmY2sB71Hc -->
+						<!-- audio: Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3 -->
 						<button id="playSong" class="show" type="button" onClick="audio.play(); playAudio()">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
 						</button>
@@ -362,6 +362,14 @@
 			  pause.classList.remove("show");
 			  playing.classList.remove("show");
 			}
+
+			function toggleNav() {
+				var menu = document.getElementById("nav");
+				var btn = document.getElementById("menuToggle");
+				menu.classList.toggle("showNav");
+				btn.classList.toggle("open");
+			}
+
 		</script>
 	</body>
 </html>
