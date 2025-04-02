@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>LOW-RES[HI-DEF] | GLENJAMN</title>
-		<link rel="icon" type="image/x-icon" href="images/glenfavico.ico">
-		<link rel="stylesheet" href="styles.css">
-<style>
-  .show { display: block; }
-  .hide { display: none; }
-  #pauseSong { display: none; }
-  #playing { display: none; }
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOW-RES[HI-DEF] | GLENJAMN</title>
+    <link rel="icon" type="image/x-icon" href="images/glenfavico.ico">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .show { display: block; }
+        .hide { display: none; }
+        #pauseSong { display: none; }
+        #playing { display: none; }
+    </style>
+</head>
+<body>
+    <div class="musicPlayer">
+        <button id="playSong" class="show" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+        </button>
+        <button id="pauseSong" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
+        </button>
+        <div class="songName">
+            <span class="title">Robot Rock//Oh Yeah</span>
+            <span class="artist">DAFT PUNK</span>
+            <div id="playing"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = new Audio('twin.mp3');
+
+            document.getElementById("playSong").addEventListener('click', function() {
+                playAudio();
+            });
+
+            document.getElementById("pauseSong").addEventListener('click', function() {
+                pauseAudio();
+            });
+
+            function playAudio() {
+                audio.play();
+                document.getElementById("playSong").classList.remove("show");
+                document.getElementById("pauseSong").classList.add("show");
+                document.getElementById("playing").classList.add("show");
+            }
+
+            function pauseAudio() {
+                audio.pause();
+                document.getElementById("playSong").classList.add("show");
+                document.getElementById("pauseSong").classList.remove("show");
+                document.getElementById("playing").classList.remove("show");
+            }
+        });
+    </script>
 	</head>
 	<body>
 <div class="container">
@@ -79,20 +122,7 @@
 						<h4>MySpace URL:</h4>
 						<a href="http://www.instagram.com/glenjamn">http://www.myspace.com/glenjamn</a>
 					</div>
-					<div class="musicPlayer">
-						<!-- audio: twin.mp3 -->
-						<button id="playSong" class="show" type="button" onClick="audio.play(); playAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
-						</button>
-						<button id="pauseSong" type="button" onClick="audio.pause(); pauseAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
-						</button>
-						<div class="songName">
-							<span class="title">Robot Rock//Oh Yeah</span>
-							<span class="artist">DAFT PUNK</span>
-							<div id="playing"></div>
-						</div>
-					</div>
+			
 <div class="panel">
                 <span class="panel-title">GLENJAMN's Interests</span>
                 <div class="panel-body">
@@ -564,35 +594,6 @@
 			displayName[5].innerHTML = userName;
 			displayName[6].innerHTML = userName;
 			displayName[7].innerHTML = userName;
-						// music player
-			var audio = new Audio('twin.mp3');
-			audio.play();
-			audio.pause();
-
-			var play = document.getElementById("playSong");
-		    var pause = document.getElementById("pauseSong");
-		    var playing = document.getElementById("playing");
-
-			function playAudio() {
-			  audio.play();
-			  play.classList.remove("show");
-			  pause.classList.add("show");
-			  playing.classList.add("show");
-			}
-
-			function pauseAudio() {
-			  audio.pause();
-			  play.classList.add("show");
-			  pause.classList.remove("show");
-			  playing.classList.remove("show");
-			}
-
-			function toggleNav() {
-				var menu = document.getElementById("nav");
-				var btn = document.getElementById("menuToggle");
-				menu.classList.toggle("showNav");
-				btn.classList.toggle("open");
-			}
 		</script>
 	</body>
 </html>
