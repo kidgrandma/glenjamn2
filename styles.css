@@ -11,7 +11,7 @@ body {
 }
 
 a:hover {
-	color: #FFCE95;
+	color: #00ffff;
 }
 .container {
   background-color: rgba(0, 0, 0, 0.7);
@@ -207,7 +207,7 @@ font-weight: 700;
 .userUrl {
 	padding: 5px;
 	margin: 20px 0;
-	border: 1px solid #ccc;
+	border: 1px solid #00ffff;
 }
 
 .userUrl h4 {
