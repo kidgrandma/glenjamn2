@@ -201,87 +201,16 @@
 					<div class="blurb">
 						<h3><span class="userName"></span>'s Blurbs</h3>
 </div>
-<div style="font-family: 'Comic Sans MS', 'Arial', sans-serif; max-width: 500px; margin: 0 auto; background: #000 url('https://tenor.com/view/daft-punk-gif-21953195'); padding: 5px; border: 4px double #ff00ff; text-align: center; position: relative;">
+<div style="font-family: 'Comic Sans MS', 'Arial', sans-serif; max-width: 500px; margin: 0 auto; background: #000 url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjhxZG14ODhic2xtaTNwM3NhOXdvZXhhdTFrZHBjNDhncWU1bmFkZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l396JYFnbVdFGQVz2/giphy.gif'); padding: 5px; border: 4px double #ff00ff; text-align: center; position: relative;">
 
-<!-- GLITCH ART HEADER -->
-<div style="position: relative; margin: 20px 0; height: 200px; overflow: hidden;">
-  <!-- Main Image -->
-  <img src="images/SOMEART.png" alt="Flyer Art" 
-       style="display: block; position: absolute; 
-              top: 50%; left: 50%; transform: translate(-50%, -50%);
-              max-width: 50%; 
-              border: 3px solid #00ffff; 
-              box-shadow: 0 0 20px #ff00ff;
-              z-index: 3;
-              filter: contrast(1.2) brightness(1.1);">
-  
-  <!-- Glitch Layers -->
-  <div style="position: absolute; 
-              top: 0; left: 0; width: 100%; height: 100%; 
-              background: url('images/SOMEART.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-position: center;
-              opacity: 0.7; 
-              mix-blend-mode: exclusion;
-              z-index: 2;
-              animation: glitch-anim 2s infinite linear;"></div>
-  
-  <div style="position: absolute; 
-              top: 0; left: 0; width: 100%; height: 100%; 
-              background: url('images/SOMEART.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              background-position: center;
-              opacity: 0.5; 
-              mix-blend-mode: overlay;
-              z-index: 1;
-              animation: glitch-anim2 3s infinite linear reverse;"></div>
-  
-  <!-- CRT Scanlines Overlay -->
-  <div style="position: absolute; 
-              top: 0; left: 0; width: 100%; height: 100%; 
-              background: linear-gradient(rgba(0,0,0,0) 50%, 
-                          rgba(0,255,255,0.1) 50%);
-              background-size: 100% 4px;
-              z-index: 4;
-              pointer-events: none;"></div>
-  
-  <!-- VHS Tracking Effect -->
-  <div style="position: absolute; 
-              top: 0; left: 0; width: 100%; height: 100%; 
-              background: linear-gradient(rgba(0,0,0,0.3) 0%, 
-                          rgba(0,0,0,0) 10%);
-              z-index: 5;
-              animation: vhs-roll 5s infinite;"></div>
-</div>
-
-<style>
-  @keyframes glitch-anim {
-    0% { transform: translate(0); opacity: 0.8; }
-    20% { transform: translate(-5px, 5px); opacity: 0.6; }
-    40% { transform: translate(5px, -5px); opacity: 0.7; }
-    60% { transform: translate(-5px, 0); opacity: 0.9; }
-    80% { transform: translate(5px, 0); opacity: 0.5; }
-    100% { transform: translate(0); opacity: 0.8; }
-  }
-  
-  @keyframes glitch-anim2 {
-    0% { transform: translate(0) scale(1.01); opacity: 0.5; }
-    25% { transform: translate(3px, -3px) scale(1.02); opacity: 0.4; }
-    50% { transform: translate(-3px, 3px) scale(1); opacity: 0.6; }
-    75% { transform: translate(0, 5px) scale(0.99); opacity: 0.5; }
-    100% { transform: translate(0) scale(1.01); opacity: 0.5; }
-  }
-  
-  @keyframes vhs-roll {
-    0%, 100% { top: 0; opacity: 0.3; }
-    50% { top: 2px; opacity: 0.1; }
-  }
-</style>
+  <!-- Glitchy header effect -->
+  <div style="position: relative; background: rgba(0,0,0,0.7); padding: 10px;">
+    <img src="images/SOMEART.png" alt="Flyer Art" style="display: block; margin: 0 auto; max-width: 50%; border: 3px solid #00ffff; box-shadow: 0 0 10px #ff00ff;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/SOMEART.png'); opacity: 0.5; mix-blend-mode: difference; pointer-events: none;"></div>
+  </div>
 
   <!-- About Me Section -->
-  <div style="text-align: left; margin: 20px 0; background: #111; padding: 10px; border-left: 5px solid #ff00ff; border-right: 5px solid #00ffff;">
+  <div style="text-align: left; margin: 20px 0; background: rgba(0,0,0,0.8); padding: 10px; border-left: 5px solid #ff00ff; border-right: 5px solid #00ffff;">
     <h4 style="color: #00ffff; font-weight: bold; margin-bottom: 10px; font-size: 1.2em; text-transform: uppercase; text-shadow: 0 0 5px #ff00ff;">
       <marquee behavior="scroll" direction="left" scrollamount="3">✧･ﾟ: *✧･ﾟ:* ABOUT ME *:･ﾟ✧*:･ﾟ✧</marquee>
     </h4>
@@ -293,8 +222,32 @@
     </p>
   </div>
 
+  <!-- Enhanced Guayaki Section -->
+  <div style="margin: 0 0 25px 0; background: rgba(0,0,0,0.7); padding: 15px; border: 3px dotted #39ff14; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://i.gifer.com/7VE9.gif'); opacity: 0.3; z-index: 0;"></div>
+    <div style="position: relative; z-index: 1;">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 10px;">
+        <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
+             alt="Guayaki" 
+             style="width: 80px; height: 80px; object-fit: contain; animation: spin 4s linear infinite;">
+        <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
+             alt="Guayaki" 
+             style="width: 60px; height: 60px; object-fit: contain; animation: float 3s ease-in-out infinite;">
+        <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
+             alt="Guayaki" 
+             style="width: 80px; height: 80px; object-fit: contain; animation: spin 4s linear infinite reverse;">
+      </div>
+      <p style="color: #39ff14; font-size: 1.2em; margin: 10px 0 0 0; font-weight: bold; text-shadow: 0 0 10px #39ff14;">
+        ✧･ﾟ: * OFFICIAL DRINK SPONSOR *:･ﾟ✧
+      </p>
+      <p style="color: #fff; font-size: 1.5em; margin: 5px 0 0 0; font-family: 'Impact'; letter-spacing: 2px;">
+        <marquee behavior="alternate" scrollamount="3">THX GUAYAKI !!!</marquee>
+      </p>
+    </div>
+  </div>
+
   <!-- Event Info -->
-  <div style="margin: 0 0 25px 0; background: #111; padding: 10px; border: 1px dashed #ff00ff;">
+  <div style="margin: 0 0 25px 0; background: rgba(0,0,0,0.7); padding: 10px; border: 1px dashed #ff00ff;">
     <p style="color: #ff66cc; font-size: 1em; margin: 0 0 5px 0; font-weight: bold; text-shadow: 0 0 5px #ff00ff;">
       <blink>✦ OPENING RECEPTION: APRIL 9, 6-10PM ✦</blink>
     </p>
@@ -303,11 +256,11 @@
     </p>
     
     <div style="display: flex; gap: 10px; margin: 15px 0;">
-      <div style="flex: 1; background: #000; padding: 10px; border: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff inset;">
+      <div style="flex: 1; background: rgba(0,0,0,0.5); padding: 10px; border: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff inset;">
         <p style="color: #00ffff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">LIMITED PRINTS</p>
         <p style="color: #aaa; font-size: 0.7em; margin: 0;">SO-ME collab</p>
       </div>
-      <div style="flex: 1; background: #000; padding: 10px; border: 1px solid #ff00ff; box-shadow: 0 0 10px #ff00ff inset;">
+      <div style="flex: 1; background: rgba(0,0,0,0.5); padding: 10px; border: 1px solid #ff00ff; box-shadow: 0 0 10px #ff00ff inset;">
         <p style="color: #ff00ff; font-size: 0.8em; margin: 0 0 3px 0; font-weight: bold;">BOOKS</p>
         <p style="color: #aaa; font-size: 0.7em; margin: 0;">my.ISM editions</p>
       </div>
@@ -315,9 +268,9 @@
   </div>
 
   <!-- Music Section -->
-  <div style="background: #000; padding: 15px; margin: 0 0 20px 0; position: relative; border: 1px solid #00ffff;">
+  <div style="background: rgba(0,0,0,0.7); padding: 15px; margin: 0 0 20px 0; position: relative; border: 1px solid #00ffff;">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: 
-        url('https://i.imgur.com/XYZ1234.gif');
+        url('https://i.gifer.com/7VE9.gif');
         opacity: 0.3;
         z-index: 0;"></div>
     <div style="position: relative; z-index: 1;">
@@ -333,29 +286,8 @@
     </div>
   </div>
 
-  <!-- Enhanced Guayaki Section -->
-  <div style="margin: 0 0 20px 0; background: #000; padding: 15px; border: 3px dotted #39ff14;">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
-      <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
-           alt="Guayaki" 
-           style="width: 80px; height: 80px; object-fit: contain; animation: spin 4s linear infinite;">
-      <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
-           alt="Guayaki" 
-           style="width: 60px; height: 60px; object-fit: contain; animation: float 3s ease-in-out infinite;">
-      <img src="https://media1.giphy.com/media/duiacDD02IGUZD9fsp/giphy.gif" 
-           alt="Guayaki" 
-           style="width: 80px; height: 80px; object-fit: contain; animation: spin 4s linear infinite reverse;">
-    </div>
-    <p style="color: #39ff14; font-size: 1.2em; margin: 10px 0 0 0; font-weight: bold; text-shadow: 0 0 10px #39ff14;">
-      ✧･ﾟ: * OFFICIAL DRINK SPONSOR *:･ﾟ✧
-    </p>
-    <p style="color: #fff; font-size: 1.5em; margin: 5px 0 0 0; font-family: 'Impact'; letter-spacing: 2px;">
-      <marquee behavior="alternate" scrollamount="3">THX GUAYAKI !!!</marquee>
-    </p>
-  </div>
-
   <!-- Location Info -->
-  <div style="margin: 0 0 20px 0; background: #111; padding: 10px; border: 1px solid #ff00ff;">
+  <div style="margin: 0 0 20px 0; background: rgba(0,0,0,0.7); padding: 10px; border: 1px solid #ff00ff;">
     <p style="color: #fff; font-size: 0.9em; margin: 0 0 3px 0;">
       <strong>HVW8 Gallery</strong><br>
       661 N. Spaulding Ave. 90036
@@ -374,13 +306,13 @@
           onmouseover="this.style.background='linear-gradient(to right, #ff66cc, #00ffff)';" 
           onmouseout="this.style.background='linear-gradient(to right, #ff00ff, #00ffff)';">
     <span style="position: relative; z-index: 2;">RSVP HERE. DO IT.</span>
-    <span style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background: url('https://i.imgur.com/XYZ1234.gif'); opacity: 0.3; z-index: 1;"></span>
+    <span style="position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; background: url('https://i.gifer.com/7VE9.gif'); opacity: 0.3; z-index: 1;"></span>
   </button>
 
   <p style="color: #aaa; font-size: 0.8em; margin: 15px 0 0 0; font-family: 'Courier New';">✉️ rsvp@hvw8.com</p>
 
   <!-- Visitor counter -->
-  <div style="margin: 20px 0 0 0; color: #ff00ff; font-family: 'Courier New'; font-size: 0.7em;">
+  <div style="margin: 20px 0 0 0; color: #ff00ff; font-family: 'Courier New'; font-size: 0.7em; background: rgba(0,0,0,0.7); padding: 5px;">
     <img src="https://counter.websiteout.net/compte.php?S=myspace&C=21&D=0&N=2345&M=1" alt="Hit Counter"> VISITORS
   </div>
 </div>
@@ -405,6 +337,9 @@
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
+  }
+  blink {
+    animation: blink 1s step-end infinite;
   }
 </style>
 	<div class="friends">
