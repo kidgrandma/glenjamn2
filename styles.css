@@ -11,7 +11,7 @@ body {
 }
 
 a:hover {
-	color: #00ffff;
+	color: #4cfdff;
 }
 .container {
   background-color: rgba(0, 0, 0, 0.7);
@@ -67,7 +67,7 @@ header {
 }
 
 .nav div a:hover {
-	color: #66ccff;
+	color: #4cfdff;
 }
 .main {
 	display: grid;
