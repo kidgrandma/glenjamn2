@@ -213,32 +213,7 @@ font-weight: 700;
 .userUrl h4 {
 	margin: 0;
 }
-
-.userDetails {
-	border: 1px solid #ccc;
-	text-align: left;
-	margin-bottom: 30px;
-}
-
-.userDetails th {
-	padding: 2px;
-	font-size: 12px;
-}
-
-.userDetails th:first-child {
-   	background: #000;
-   	color: #555;
-	border-bottom: 1px solid #555;
-	width: 120px;
-}
-
-.userDetails th:last-child {
-   	background: #000;
-   	color: #fff;
-	border-bottom: 1px solid #555;
-	font-weight: normal;
-}
-	.musicPlayer {
+.musicPlayer {
 	position: relative;
 	border: 1px solid #333;
 	background: linear-gradient(#eee, #ccc);
@@ -348,6 +323,40 @@ font-weight: 700;
 	text-transform: uppercase;
 	font-size: 11px;
 }
+
+.userDetails {
+	border: 1px solid #ccc;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.userDetails th {
+	padding: 2px;
+	font-size: 12px;
+}
+
+.userDetails th:first-child {
+   	background: #000;
+   	color: #555;
+	border-bottom: 1px solid #555;
+	width: 120px;
+}
+
+.userDetails th:last-child {
+   	background: #000;
+   	color: #fff;
+	border-bottom: 1px solid #555;
+	font-weight: normal;
+}
+	.musicPlayer {
+	position: relative;
+	border: 1px solid #333;
+	background: linear-gradient(#eee, #ccc);
+	padding: 5px;
+	margin-bottom: 20px;
+	height: 42px;
+}
+
 .right {
 	grid-column: 2;
 }
