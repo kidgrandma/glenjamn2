@@ -7,6 +7,12 @@
 		<title>LOW-RES[HI-DEF] | GLENJAMN</title>
 		<link rel="icon" type="image/x-icon" href="images/glenfavico.ico">
 		<link rel="stylesheet" href="styles.css">
+<style>
+  .show { display: block; }
+  .hide { display: none; }
+  #pauseSong { display: none; }
+  #playing { display: none; }
+</style>
 	</head>
 	<body>
 <div class="container">
@@ -388,34 +394,28 @@
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
 			
-			var audio = new Audio('my-chemical-romance_im-not-okay-i-promise.mp3');
-			audio.play();
-			audio.pause();
 
-			var play = document.getElementById("playSong");
-		    var pause = document.getElementById("pauseSong");
-		    var playing = document.getElementById("playing");
+  var audio = new Audio('Daft Punk Alive 2007 - Robot Rock-Oh Yeah-[GLEN].mp3'); 
+  
+  var play = document.getElementById("playSong");
+  var pause = document.getElementById("pauseSong");
+  var playing = document.getElementById("playing");
 
-			function playAudio() {
-			  audio.play();
-			  play.classList.remove("show");
-			  pause.classList.add("show");
-			  playing.classList.add("show");
-			}
+  function playAudio() {
+    audio.play();
+    play.classList.add("hide");
+    pause.classList.remove("hide");
+    playing.classList.remove("hide");
+  }
 
-			function pauseAudio() {
-			  audio.pause();
-			  play.classList.add("show");
-			  pause.classList.remove("show");
-			  playing.classList.remove("show");
-			}
+  function pauseAudio() {
+    audio.pause();
+    play.classList.remove("hide");
+    pause.classList.add("hide");
+    playing.classList.add("hide");
+  }
 
-			function toggleNav() {
-				var menu = document.getElementById("nav");
-				var btn = document.getElementById("menuToggle");
-				menu.classList.toggle("showNav");
-				btn.classList.toggle("open");
-			}
+  // Remove the immediate play/pause calls from your existing script
 		</script>
 	</body>
 </html>
