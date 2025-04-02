@@ -288,45 +288,26 @@
 <style>
   .rsvp-button {
     background: linear-gradient(to right, #ff00ff, #00ffff);
-    color: #000;
     border: none;
+    color: #000;
     padding: 12px 30px;
     font-size: 1em;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
-    transition: color 0.3s ease; 
+    transition: background 0.3s ease;
     display: inline-block;
     outline: none;
   }
   .rsvp-button:hover {
-
-    color: #ff66cc;
-  }
-  .rsvp-button span.bg-overlay {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: url('https://tenor.com/view/daftpunk-dj-techno-gif-4849592');
-    background-size: cover;
-    opacity: 0.3;
-    z-index: 1;
-  }
-  .rsvp-button span.text {
-    position: relative;
-    z-index: 2;
+    background: linear-gradient(to right, #ff66cc, #00ffff);
   }
 </style>
 
 <button class="rsvp-button" onclick="window.location.href='mailto:rsvp@hvw8.com'">
-  <span class="text">RSVP HERE. DO IT.</span>
-  <span class="bg-overlay"></span>
+  RSVP HERE. DO IT.
 </button>
 <p style="color: #aaa; font-size: 0.8em; margin: 15px 0 0 0; font-family: 'Courier New';">
   ✉️ rsvp@hvw8.com
