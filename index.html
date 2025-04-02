@@ -79,20 +79,6 @@
 						<h4>MySpace URL:</h4>
 						<a href="http://www.instagram.com/glenjamn">http://www.myspace.com/glenjamn</a>
 					</div>
-		<div class="musicPlayer">
-						<!-- audio: glenrobot.mp3 -->
-						<button id="playSong" class="show" type="button" onClick="audio.play(); playAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
-						</button>
-						<button id="pauseSong" type="button" onClick="audio.pause(); pauseAudio()">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
-						</button>
-						<div class="songName">
-							<span class="title">Alive 2007 - Robot Rock/Oh Yeah</span>
-							<span class="artist">Daft Punk</span>
-							<div id="playing"></div>
-						</div>
-					</div>
 
 <div class="panel">
                 <span class="panel-title">GLENJAMN's Interests</span>
@@ -566,27 +552,6 @@
 			displayName[6].innerHTML = userName;
 			displayName[7].innerHTML = userName;
 			
-
-  var audio = new Audio('glenrobot.mp3'); 
-  var play = document.getElementById("playSong");
-  var pause = document.getElementById("pauseSong");
-  var playing = document.getElementById("playing");
-
-  function playAudio() {
-    audio.play();
-    play.classList.add("hide");
-    pause.classList.remove("hide");
-    playing.classList.remove("hide");
-  }
-
-  function pauseAudio() {
-    audio.pause();
-    play.classList.remove("hide");
-    pause.classList.add("hide");
-    playing.classList.add("hide");
-  }
-
-  // Remove the immediate play/pause calls from your existing script
 		</script>
 	</body>
 </html>
