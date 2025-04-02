@@ -157,7 +157,7 @@ font-weight: 700;
 }
 
 .contact {
-	border: 1px solid #ccc;
+	border: 1px solid #fff;
 }
 
 .contact h3,
@@ -195,7 +195,7 @@ font-weight: 700;
 	height: 15px;
 	width: 15px;
 	background-size: cover;
-	fill: #FFCE95;
+	fill: #4cfdff;
 	transition: 0.2s ease all;
 }
 
