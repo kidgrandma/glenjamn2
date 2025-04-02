@@ -123,7 +123,19 @@
 						<h4>MySpace URL:</h4>
 						<a href="http://www.instagram.com/glenjamn">http://www.myspace.com/johndoe</a>
 					</div>
-		
+		<div class="musicPlayer">
+						<!-- audio: https://www.youtube.com/watch?reload=9&v=UgmY2sB71Hc -->
+						<button id="playSong" class="show" type="button" onClick="audio.play(); playAudio()">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+						</button>
+						<button id="pauseSong" type="button" onClick="audio.pause(); pauseAudio()">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
+						</button>
+						<div class="songName">
+							<span class="title">I'm Not Okay (I Promise)</span>
+							<span class="artist">My Chemical Romance</span>
+							<div id="playing"></div>
+						</div>
 					</div>
 
 <div class="panel">
@@ -375,7 +387,35 @@
 			displayName[6].innerHTML = userName;
 			displayName[7].innerHTML = userName;
 			displayName[8].innerHTML = userName;
+			
+			var audio = new Audio('my-chemical-romance_im-not-okay-i-promise.mp3');
+			audio.play();
+			audio.pause();
 
+			var play = document.getElementById("playSong");
+		    var pause = document.getElementById("pauseSong");
+		    var playing = document.getElementById("playing");
+
+			function playAudio() {
+			  audio.play();
+			  play.classList.remove("show");
+			  pause.classList.add("show");
+			  playing.classList.add("show");
+			}
+
+			function pauseAudio() {
+			  audio.pause();
+			  play.classList.add("show");
+			  pause.classList.remove("show");
+			  playing.classList.remove("show");
+			}
+
+			function toggleNav() {
+				var menu = document.getElementById("nav");
+				var btn = document.getElementById("menuToggle");
+				menu.classList.toggle("showNav");
+				btn.classList.toggle("open");
+			}
 		</script>
 	</body>
 </html>
