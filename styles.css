@@ -81,14 +81,13 @@ header {
 }
 
 .profile {
-	display: grid;
-	grid-gap: 1em;
-	align-items: center;
+  display: flex;
+  align-items: flex-start;
 }
 
 .profile .profilePicture {
 	grid-column: 1/2;
-	text-align: center;
+	text-align: top;
 	margin: auto;
 }
 
